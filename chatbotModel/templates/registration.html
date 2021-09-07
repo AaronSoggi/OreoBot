@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Student registration</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}"/>
+    </head>
+    <body>
+         
+        <form method="POST" autocomplete="off" action="" name="form">
+              {% csrf_token %}
+
+            <div class="wrapper">
+                <h1>Sign up</h1>
+               
+                <div class="form" >
+                    <div class="user_input" >  
+                        {{form.username}}
+                
+                    </div>
+                    <div class="user_input">
+                        {{form.email}}
+                    </div>
+                    <div class="user_input">
+                        {{form.password1}}
+                    </div>  
+                    <div class="user_input">
+                        {{form.password2}}
+                       
+                    </div>  
+                    <div class="button" >
+                        <button type="submit" style="width: 130px; height: 40px; border-radius: 8px;color: white; background-color: #0088a9; border: none; cursor: pointer;" >Create account</button>
+                    </div>
+                    {{form.errors}}
+                    <div class="loginbtn">
+                        <p style="margin-top: 20px; text-align: center; color: black;">Already have an account?<br> click here to <a href="{% url 'login' %}">Login</a> </p>                    
+                    </div>
+                   
+              
+                </div>    
+            
+            </div>
+     
+        </form>
+    
+    </body>
+
+</html>
+ 

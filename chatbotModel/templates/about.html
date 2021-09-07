@@ -1,0 +1,72 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>var notification = new Audio(); notification.src= "{% static 'sounds/notification.mp3' %}"</script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}"/>
+    <title>About</title>
+</head>
+<style>
+    .logout:hover{
+        transition: all 0.3s ease 0s;
+        color: #0088a9;
+
+    }
+    .logo{
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        border-radius: 50%;
+    }
+    .logo:hover{        
+        border-radius: 50%;
+        transform:scale(1.08);        
+    }
+</style>
+<body>
+    <header>
+        <div class="overlay">
+            <a href="{% url 'dashboard' %}"><img class ="logo" alt="logo" src="{% static 'images/chat_logo.png' %}" width="110" height="116"></a>
+            <h2 style="font-family: 'Raleway', sans-serif; font-weight: bolder; font-size: 25px; text-align: center; color: #fff; padding-top: 5px;" >OreoBot</h2>
+
+        </div>
+       
+
+        <nav class="menu">
+            <ul class ="links">
+                <li ><a href="{% url 'about' %}" style="font-size: 20px;">About</a></li>
+                <li ><a href="{% url 'advice' %}" style="font-size: 20px;">Advice</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <audio controls style="width:180px; height: 50px; padding-top: 15px; margin-bottom: 10px; margin-left: 50px; ">     
+                <source src="{% static 'sounds/background_music.mp3' %}">
+                
+            </audio>
+            <p style="text-align: center; padding-left: -30px; font-size: 18px; color: white; font-family: 'Raleway', sans-serif;">Feeling stressed today? press play</p>
+
+        </div>
+        <a href="{% url 'logout' %}" class="logout" style="margin-right: -40px; font-size: 20px;">Logout</a>
+       
+                
+    </header>  
+  
+    
+    <div class="container">
+        <div class="content">
+            <h1>About</h1>
+            <p>“Almost two-thirds (63%) of students indicated that their well-being and mental health had worsened since the start of the autumn term 2020; this has remained stable since January 2021.”<br><br>
+            University can be the best years of your life; however, it can also cause us to experience unexpected situations which can make us feel overwhelmed and out of place. 
+            OreoBot is an application which has been designed to help university students overcome the obstacles that they face when in this particular environment and help 
+            them to cope with both anxiety and depression.<br><br>There are many issues that students face when moving away from home such as:<br><br><li>Meeting and working with new people</li><li>Exams</li> <li>Coursework deadlines</li>
+            <li>Managing finances</li><li>Home sickness</li><li>Balancing other commitments, such as caring responsibilities or work</li>
+            <li>Maintaining relationships with family and friends at home</li><li>Leaving home </li><li>finding accomodation and living with new people</li></p> 
+            <p>This model will give students the support they need if experiencing any of the problems above, and encourage them to seek professional help from either the student support services 
+            or professional therapists.<br><br>Data protection regulations (GDPR) will be applied when using this application, which will ensure that whenever a student interacts with the chatbot, 
+            the data that is exchanged during conversations will remain confidential.</p>  
+        </div>
+    </div>
+</body>
+</html>

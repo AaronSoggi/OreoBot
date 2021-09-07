@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Student login</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}"/>
+    </head>
+    <body>
+   
+        <form method="POST" autocomplete="off" action="" name="form" >
+              {% csrf_token %}
+
+            <div class="wrapper">
+                <h1>Login</h1>
+               
+                <div class="form"  >
+                    <div class="user_input" style="padding-top:10px ;">
+                        <input type="text" name="username" placeholder="Username" class="form-control" style="border: none; background-color:#e9e9e9; height: 40px; padding:10px;">
+                        
+                    </div>
+                    <div class="user_input"style="padding-top:10px;" >
+                        <input type="password" name="password" placeholder="Password" class="form-control" style="border: none; background-color:#e9e9e9; height: 40px; padding:10px;">        
+                    </div>  
+                    {{form.errors}}
+                    <div class="button" >
+                        <button type="submit" style="width: 130px; height: 40px; border-radius: 8px; color: white; background-color:#0088a9; border: none;cursor: pointer;" >Login</button>
+                    </div>
+                    {% for message in messages %}
+                        <p id="messages" style="text-align: center; margin-top: 20px;">{{message}}</p>
+                    {% endfor %}
+                   
+                    <div class="loginbtn">
+                        <p style="margin-top: 20px; text-align: center; color: black;">Don't have an account?<br> click here to <a href="{% url 'register' %}">Sign up</a> </p>
+                       
+                    </div>             
+              
+                </div>    
+            
+            </div>
+
+        </form>
+    
+    </body>
+
+</html>
+ 

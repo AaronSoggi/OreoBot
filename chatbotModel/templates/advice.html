@@ -1,0 +1,94 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>var notification = new Audio(); notification.src= "{% static 'sounds/notification.mp3' %}"</script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}"/>
+    <title>About</title>
+</head>
+<style>
+    .logout:hover{
+        transition: all 0.3s ease 0s;
+        color: #0088a9;
+
+    }
+    h3{
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+
+    }
+    .logo{
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        border-radius: 50%;
+    }
+    .logo:hover{        
+        border-radius: 50%;
+        transform:scale(1.08);        
+    }
+</style>
+<body>
+    <header>
+        <div class="overlay">
+            <a href="{% url 'dashboard' %}"><img class ="logo" alt="logo" src="{% static 'images/chat_logo.png' %}" width="110" height="116"></a>
+            <h2 style="font-family: 'Raleway', sans-serif; font-weight: bolder; font-size: 25px; text-align: center; color: #fff; padding-top: 5px;" >OreoBot</h2>
+        </div>
+       
+
+
+        <nav class="menu">
+            <ul class ="links">
+                <li><a href="{% url 'about' %}" style="font-size: 20px;">About</a></li>
+                <li><a href="{% url 'advice' %}" style="font-size: 20px;">Advice</a></li>
+                
+            </ul>
+           
+        </nav>
+        <div>
+            <audio controls style="width:180px; height: 50px; padding-top: 15px; margin-bottom: 10px; margin-left: 50px; ">     
+                <source src="{% static 'sounds/background_music.mp3' %}">
+                
+            </audio>
+            <p style="text-align: center; padding-left: -30px; font-size: 18px; color: white; font-family: 'Raleway', sans-serif;">Feeling stressed today? press play</p>
+
+        </div> 
+        <a href="{% url 'logout' %}" class="logout" style="margin-right: -40px; font-size: 20px;">Logout</a>          
+        
+    </header>  
+ 
+    
+    <div class="container">
+        <div class="content">
+            <h1>Student advice</h1>
+            <p>Supporting the mental health of students from across the UK is an imperative requirement which needs an effective response across higher education so that students 
+                can get the support they need in times of struggle.<br><br>In addition to chatbot applications such as OreoBot, there are numerous resources that students can access, 
+                to help eradicate any negative thoughts they experience.<br><br><h2 style="color: white; font-family: 'Raleway', sans-serif;">Where can I get support?</h2>
+                <br><br><h3>Talk to another individual</h3><p>Talking about your issues to another person can always develop a positive mind set and make you feel better 
+                about yourself.<br><br>People that you could talk to:</p><br><li>Teachers</li><li>Student support services<li>Family/friends</li><li>Therapists</li>
+                <li>Doctors</li><p>Student support services or tutors at your university can direct you towards many useful therapy services. Below are some mental health crisis helplines:</p><br>
+                <li><b>Samaritans</b> - You can call 116 123, free from any phone or you can contact the samaritans welsh language line on 0808 164 0123. The samaritans are open from 7pm-11pm everyday.</li>
+                <li><b>The Mix </b>- The mix work with people who are under 25 only. They are available from Sunday -Friday 2pm -11pm and can You can contacted on 0808 808 4994</li>
+                <li><b>SANEline</b> - if you or any of your friends are experiencing a mental health condition you can contact SANEline on 0300 304 7000. They are open from 4:30pm-10:30pm everyday. </li>
+                <li><b>Campaign Agaisnt Living Miserably(CALM)</b> - Calm is for males only, and are open from 5pm - midnight everyday. They can be contacted on 0800 58 58 58.</li>
+                <br><br><h3>University student support</h3><p>Universities can be very helpful towards people with mental health conditions. They usually have a qualified 
+                therapist to help you access the support you need.<br><br>In addition to this, there are many other ways they can contribute towards eliminating barriers that are 
+                making it hard for students to study. Examples include:</p><br><br><li>Arranging a structural approach towards your studies that would be most convenient for you. </li>
+                <li>Making adjustments to your exams and coursework, which may involve extensions and more time to complete exams.</li><li>Communicating with student finances about funding issues.</li>
+                <br><br><h3>Online help</h3><p>There are websites which you can explore:</p><br>
+                <li><a href="https://www.nhs.uk/mental-health/children-and-young-adults/help-for-teenagers-young-adults-and-students/student-stress-self-help-tips/" target="_blank" style="color: rgb(0, 0, 255);">Mental health and wellbeing</a>&nbsp;information</li>
+                <li><a href="https://www.studentsagainstdepression.org/"  target="_blank" style="color: rgb(0, 0, 255);">Students against depression</a>&nbsp;website</li>
+                <li><a href="https://www.mind.org.uk/information-support/"  target="_blank" style="color: rgb(0, 0, 255);">Information and support</a>&nbsp;on the mind.org website.</li><br><h3>Therapy and counselling</h3>
+                <p>Therapy and counselling are two very useful methods which allow you to understand ways to cope with your feelings in a safe environment. 
+                Cognitive behavioural therapy (CBT) which is the most widely used talking therapy in the UK has proven to help manage issues by changing the way you think and behave.</p>
+                <p>You can search for a&nbsp;<a href="https://www.bacp.co.uk/search/Therapists"  target="_blank" style="color: rgb(0, 0, 255);">therapy service</a>&nbsp;to find out what’s available in your area.</p><br>
+                <br><h3>Disabled students allowance(DSA)</h3><p>At all UK universities students are given the opportunity to have one to one mentoring with a specialist, through <a href="https://www.gov.uk/disabled-students-allowance-dsa"  target="_blank" style="color: rgb(0, 0, 255);">Disabled Students Allowance (DSA)</a></p>
+                <p>The DSA can provide funds for the following:</p><br><li>Facilities such as PCs and equipment if the student is in need of one due to mental health conditions or a disability</li>
+                <li>Travel funds so that your able to attend your lessons or work placement.</li><li>Assistants such as a sign language interpreter or specialist note taker.</li>
+                <li>Other support associated with studying such as printing numerous copies of documentation for proof reading.</li><p>If you decide to not apply for DSA, you will still be given advice so that you know what other options are available. </p>
+            </p>   
+        </div>
+    </div>
+</body>
+</html>

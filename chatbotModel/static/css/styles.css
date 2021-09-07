@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    background-color: #24252a;
+   
+}
+.loading{
+    margin-left: 420px;
+   
+  
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin: .2rem;
+    animation: scaling 2.5s ease-in-out infinite;
+}
+
+@keyframes scaling{
+    0%, 100%{
+        transform:scale(0.2);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    50%{
+        transform:scale(1);
+        background-color:whitesmoke;
+    }
+}
+.circle:nth-child(0){
+    animation-delay: 0s;
+}
+.circle:nth-child(1){
+    animation-delay: 0.2s;
+}
+.circle:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+li, a, button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.btn1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:35px 10%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.menu .links{
+    list-style: none;
+    margin-left: 150px;
+
+}
+
+.menu .links li{
+    display: inline-block;
+    padding: 0px 20px;
+  
+}
+.menu .links li a{
+    transition: all 0.3s ease 0s;
+}
+.menu .links li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+#chatbot{
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 43%;
+    height: 55%;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: -1px 4px #d4d4d4;
+    padding: 10px;
+    background-color: #ffffff;     
+}
+
+.botText{
+    clear: right;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+    padding: 0.5em;
+  
+}
+.botText img{
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+}
+.botText p{
+    margin: 0.5em;
+    margin-top: 28px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: rgb(211, 211, 211);
+}
+.btn{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background: #2d93fa;
+    padding: 12.5px ;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    box-shadow: 0 0 20px rgba(226, 226, 226, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+#userInput{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    width:50%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#textInput{
+    border: 1px solid rgb(201, 201, 201);   
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    width: 78%;
+    height: 45px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(211, 211, 211);
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+.no_outline:focus{
+    outline:none;
+}
+.card{
+    
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    background: #aaceaa;
+    box-shadow: 5px 5px 15px #9fa1a5;
+    text-align: right;
+    margin-left: 700px;
+    font-size: 15px;
+
+    width: fit-content;
+    
+}
+.icon{
+    margin-left: 50px;
+}
+
+.userText{
+    clear: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(211, 211, 211);
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+    padding: 0.5em;   
+    
+}
+.userText img{
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+
+
+}
+.userText p{
+    margin: 0.5em;
+    margin-top: 28px;
+    text-align: left;
+    
+}
+
+.welcome-msg{
+    text-align: center; 
+    font-family: 'Raleway', sans-serif; 
+    color: white;
+}
+.logout:hover{
+    transition: all 0.3s ease 0s;
+    color: #0088a9;
+    
+}

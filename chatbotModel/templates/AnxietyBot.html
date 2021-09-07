@@ -1,0 +1,119 @@
+{% load static %}
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title >Anxiety Chatbot</title>
+    <script>var notification = new Audio(); notification.src= "{% static 'sounds/notification.mp3' %}"</script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        .logo{
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            border-radius: 50%;
+        }
+        .logo:hover{        
+            border-radius: 50%;
+            transform:scale(1.08);        
+        }
+        #userInput{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:40px;
+            width:50%;
+            text-align: center;
+            font-size: 15px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+              
+    <header>
+
+        <div class="overlay">
+            <a href="{% url 'dashboard' %}"><img class ="logo" alt="logo" src="{% static 'images/chat_logo.png' %}" width="110" height="116"></a>
+            <h2 style="font-family: 'Raleway', sans-serif; font-weight: bolder; font-size: 25px; text-align: center; color: #fff; padding-top: 5px;" >OreoBot</h2>
+
+        </div>
+     
+
+        <nav class="menu">
+            <ul class ="links">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'advice' %}">Advice</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <audio controls style="width:180px; height: 50px; padding-top: 15px; margin-bottom: 10px; margin-left: 50px; ">     
+                <source src="{% static 'sounds/background_music.mp3' %}">
+                
+            </audio>
+            <p style="text-align: center; padding-left: -30px; font-size: 18px; color: white; font-family: 'Raleway', sans-serif;">Feeling stressed today? press play</p>
+        </div>    
+        <a href="{% url 'logout' %}" class="logout" style="margin-right: -40px;">Logout</a>
+        
+    </header>
+    
+    
+    <h2 class="welcome-msg" style="margin-top: -15px; margin-bottom: 20px; font-family: 'Raleway', sans-serif;" >Welcome, {{request.user}} !</h2>
+  
+    <div id="chatbot"></div>
+    <div id="userInput"></div>
+    <div id="userInput"> 
+        <input type="text" class="no_outline" id="textInput" name="userMessage" placeholder="Type your message..."/> 
+        <a href="#" onmousedown="notification.play()" class="btn" id="buttonInput">Send</a>
+    </div>
+   
+  
+    
+
+    <div class="loading">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    
+
+
+    <script>
+        
+    function getUserResponse(){
+    var userText = $('#textInput').val();  
+    
+    if(userText.trim().length == 0){
+        return
+    }else{
+       
+        var userHTML = `<div class='userText'><img src={% static 'images/userIcon.png' %} width=50px height=50px> <p>${userText}</p></div>`;
+        
+    $('#textInput').val("");
+    
+
+    $('#chatbot').append(userHTML);
+    
+
+    $.get('/chatbotModel/getResponse',{userMessage:userText}).done(function(data){
+        var returnedMessage = `<div class='botText'>
+        <img src={% static 'images/chat_logo.png' %} width=50px height=50px>
+        <p>${data}</p>
+        </div>`;
+        $('#chatbot').append(returnedMessage)
+    })
+    } 
+}
+    
+    $('#buttonInput').click(function(){
+    getUserResponse()
+    
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Hows it going?", "yo dude!", "yo", "howdy", "hey", "good morning", "yo whats going on", "hey dude", "sup", "whats up", "whats up my g"],
+         "responses": ["Hello, how can I help you today? 😊", "Hi there, how can I help? 😊" , "Welcome!, how can i help? 😊 "]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "cya", "Inabit", "Thank you bye"],
+         "responses": ["See you later, thanks for visiting 😊", "Have a nice day!😊" , "Bye! Come back again soon. 😊", "it was nice chatting with you. Come back and see me if you need something! 😊"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank you so much", "Thanks for helping" ,"thanks oreobot", "you've been very helpful"],
+         "responses": ["Happy to help! 😊", "Any time! 😊", "My pleasure 😊", "No worries 😊 !", "your welcome! 😊", "No problem!, its what im here for😊 "]
+        },
+        {"tag": "your_name",
+        "patterns": ["who are you?", "whats your name?", "tell me your name", "name?"],
+        "responses": ["I'm OreoBot!, let me know how I can help you 😊"]
+        },
+        {"tag": "CBT",
+         "patterns": ["What is cognitive behavioral therapy", "what is CBT?", "Can you tell me about CBT" ],
+         "responses": ["Cognitive behavioral therapy is a psycho-social intervention that aims to improve mental health. CBT focuses on challenging and changing cognitive distortions and behaviors, improving emotional regulation, and the development of personal coping strategies that target solving current problems.😊"
+         ]
+        },
+        {"tag": "anxiety_definition",
+         "patterns": ["What is anxiety?", "Can you explain to me what anxiety is?", "i want to know about anxiety"],
+         "responses": ["Anxiety is a feeling of unease, such as worry or fear, that can be mild or severe. Everyone has feelings of anxiety at some point in their life. For example, you may feel worried and anxious about sitting an exam, or having a medical test or job interview. 😊"]
+        },
+        {"tag": "think",
+         "patterns": ["I think I have anxiety", "I feel that I may have anxiety", "im thinking that i could have anxiety", "please help me i think i may be suffering from anxeity", "suffer from anxiety" ],
+         "responses": ["Why do you think this?", "Could you elaborate on why you may think that?", "you've come to the right place! tell me more"]
+        },
+        {"tag": "upset",
+         "patterns": ["I haven't been feeling too good lately", "I've been pretty upset lately"],
+         "responses": ["Thats not good, whats wrong?", "why is that? maybe i can help"]
+        },
+        {"tag": "first_exam",
+        "patterns": ["I'm getting so nervous for my first exam", "not looking forward to my first exam", "feeling a bit anxious about my upcoming exam", "I'm not looking forward to my exam", "im getting stressed out with my exams" ],
+        "responses": ["No one likes exams! and its totally normal to feel nervous or stressed😊. Just carry on working hard and persevere! As long as you try your best that is all that matters, you got this! 💪🏽 "]
+        },
+        {"tag": "revision",
+        "patterns": ["I'm getting really stressed out with my revision", "i dont know how people revise for exams", "" ],
+        "responses": ["revision can be very stressful, and there are many ways that you can revise for exams. You just have to figure out what works best for you! everyone is different 😃"]
+        },
+        {"tag": "suicidal",
+         "patterns": ["i feel that i am suicidal", "i want to kill myself", "suicidal", "i dont want to live", "i want to hang myself", "I want to die"],
+         "responses": ["I'm very sad to hear that...i can direct you towards the most appropriate services. Help is always available so dont feel scared to reach out. You can find many support services by clicking on the 'advice' section at the top of the page.", "If you need any professional advice you can contact Campaign Agaisnt Living Miserably(CALM) on 0800 58 58 58 – 5pm to midnight every day. Alternatively you can contact Papyrus if you are under 35 on 0800 068 41 41 – 9am to midnight every day, or email them on pat@papyrus-uk.org 😊",
+        "You matter and it doesn't matter what your depression or suicidal thoughts tell you. Take a look at the support services which can be found by clicking on the 'advice' section at the top of the page.", "If you feel like you might actually take your life, I would recommend that you go to a hospital emergency room, or a mental health crisis clinic right away to get some help. The most important thing right now is to keep yourself safe. you can find some useful links on the 'advice' section located at the top of this page"]
+        },
+        {"tag": "im_worthless",
+        "patterns": ["i feel like everyone thinks im worthless", "I am having an issue where i feel worthless to everyone and i dont know what to do", "All i ever do is think about how worthless i am to everyone"],
+        "responses": ["If everyone thinks you're worthless, then maybe you need to find new people to chill with! Seriously, the social context in which a person lives is a big influence in self-esteem. Otherwise, you can go round and round trying to understand why you're not worthless, then go back to the same crowd and be knocked down again. I would say try going onto YouTube or social media, to find inspirational videos or quotes. Look at the content which state’s that no one is worthless and everyone has a purpose in life.😊", 
+        "You are not worthless, don’t ever assume that you are. Bad feelings are part of living. They are the motivation to remove ourselves from situations and relationships which do us more harm than good. Bad feelings do feel terrible. Your feeling of worthlessness may be good in the sense of motivating you to find out that you are much better than your feelings today.😊"
+        , "I first want to let you know that you are not alone in your feelings and there is always someone there to help. You can always change your feelings and change your way of thinking by being open to trying to change. You can always make yourself available to learning new things or volunteering so that you can make a purpose for yourself. 😊"
+        , "It sounds like you may be struggling with depression. Depression can make you feel overwhelmed and paralyzed to change. I would suggest that you connect with a provider who can help you get to the root of where the worthlessness is coming from and help you develop a plan for recovery. In the meantime, small steps can go a long way. Self-care interventions such as journaling your feelings, mindfulness meditation, and regular exercise are all helpful to reconnecting with the present moment and gaining internal motivation. Focusing on one day at a time and bringing your thoughts back to the present can also be beneficial. There is hope!😊"
+        ,"The feeling of being worthless is caused by your inside being not matching your outside result. Your comparison to others and you thinking you need to be someone other than who you are. You are not worthless. No one is worthless. You need to find your worth and not let yourself talk yourself out of the good you find in yourself.😊"]     
+        },
+        {"tag": "sleep_worthless",
+        "patterns": ["I barely sleep and I do nothing but think about how I'm worthless and how I shouldn't be here." ],
+        "responses": ["The first thing I'd suggest is getting the sleep you need or it will impact how you think and feel. I'd look at finding what is going well in your life and what you can be grateful for. I believe everyone has talents and want to find their purpose in life. I think you can figure it out with some help."
+        , "It sounds like you have so much on your mind! I am relieved to hear that you have never tried or have contemplated suicide, but not being able to sleep, feeling worthless, and like you shouldn't be here are big issues that need addressing. Please get around to counseling. Having someone to listen to you is a gift to yourself. You deserve the help of someone helping you change your feelings of worthlessness. You have not been able to do this alone. It's time to reach out for help. You can do this!💪🏽Best to you! 😁"
+        , "I'm glad you are interested in changing your feelings of worthlessness. Visiting your doctor is a great first step to address your lack of sleep. First, you want to make sure that you are physically healthy and that there isn't a physical condition causing your problem with sleep. Changing your feelings is something that is difficult to do, especially on your own. Make sure that you have someone you can trust and you can talk to about how you feel. This can be a friend or a family member. If you find that there isn't anyone you would feel comfortable talking to about this issue, find a therapist close to you who can help. One activity that people have found helpful in feeling better about themselves is keeping a gratitude journal. You can do this by journaling daily about the things that you are grateful for. There is no right or wrong way of doing this, as long as you focus your journal entries on the things you are grateful for in life.😊"
+        , "Depression can cause insomnia, and make a person focus on their own perceptions that they are 'worthless'. It is important to remember that other people may not truly perceive you as worthless. This is the depression talking. I think that it is extremely important when you are this depressed, to sit down and write down some positives about yourself. What are your strengths? What are some positive things that your have done in your life? It sounds like now is the time to act on the idea of getting some help for yourself. If you feel like you might actually take your life, I would recommend that you go to a hospital emergency room, or a mental health crisis clinic right away to get some help. The most important thing right now is to keep yourself safe. If you are feeling like you are not going to hurt yourself despite your suicidal thoughts, I would recommend that you focus on finding a therapist as soon as possible.😊"]
+        },
+        {"tag": "worthless",
+        "patterns": ["Can I change my feeling of being worthless to everyone?" , "can i change the feeling not being wanted" , "can i change the feeling of being worthless"],
+        "responses": ["You can, for sure!... and the first step is to believe you are worthy TO YOURSELF. Recognizing you are in a quest is already a big first step. Taking the time to start figuring out who you are is definitely the next... do so with SELF COMPASSION and kindness. Know this is a process and just look forward for what you might find.  I do recommend you find someone to talk to (there are many options out there that can fit the situation you are in), and I also recommend you start by giving yourself the importance to invest some time and effort in this quest. YOU DESERVE IT. There are some excellent TED Talks you can google, great books you can read, or even joining a yoga practice, team or some kind of hobby may help. Anything that shows yourself you are worthy of this effort. Have patience and start!!!! the answer is out there waiting for you. Asking these questions already set you on the right path.😊"]
+        },
+        {"tag": "counselling",
+        "patterns": ["Do I have too many issues for counseling?", "i feel as though i have too many issues for a therapist" , "is there any such thing as having to many issues for counselling?"],
+        "responses": ["Absolutely not.  I strongly recommending working on one issue/need at a time.  In therapy you will set smart goals and objectives that will help you reach your goals.  I see you as a survivor and not a victim. Best wishes to you."
+        , "Just go! You start with the most prevalent issue by talking with your therapist. Healing one issue can have a ripple effect and heal other issues as well.", "There is no such thing as too many issues for counseling. Many issues are often interrelated and can all be worked on with some time and patience.😊"
+        , "People who have only a few issues and people who have several issues are perfect for therapy. There is no such thing as having too many problems for therapy. Therapy is great because it will help you process all that you are going through, heal from past and present pain, and gain clarity.😊"
+        ,"Absolutely not! It is never too much. The most important thing is that you are reaching out to get help. Therapy helps you to develop healthier coping strategies and that can help reduce the anxiety and depression as well as improve your sleep. This can all be done at a pace that is best for you. Your therapist can help you process all of this in a safe and supportive space.😊"
+        , "No, it is natural for us to have a number of issues going on if we don't address the concerns we have in our lives. Seeking counseling can assist you in working on these issues individually as well as ways in which they intersect and impact each other. 😊"
+        , "Of course not. Counseling is a process, whereby you and your therapist will help you create goals- starting with issues that are most pressing and interfering with your daily functioning. When anxiety and daily stress is more manageable then you and your therapist can examine more deep rooted or more chronic issues😊."
+        , "There are never too many issues in living. In a way we take on too many issues at one time. Then we become over whelmed with 'anxiety and depression.'  A skillful, caring therapist will help you find a place to start and deal with one issue at a time. when this helps the other issues, then the other issues become more manageable😊."
+        , "Hi, people who have only a few issues and people who have several issues are perfect for therapy. There is no such thing as having too many problems for therapy. Therapy is great because it will help you process all that you are going through, heal from past and present pain, and gain clarity😊."
+        , "Hello there,No one has too many issues to address in counseling. Once you start counseling, your therapist will help you identify which issues to start working on first and which are causing you the most distress. Once you and your therapist prioritize your concerns, you can start to address each concern, starting with the one causing the most distress for you 😊."]
+        },
+        {"tag": "panic_attacks",
+        "patterns": ["i've had trouble sleeping due to panic attacks" ],
+        "responses": ["The first step is to accept your nervousness and restless sleep. As often as possible, sleep during daytimes in order for your body to catch up on its need for rest. Accept  your feelings about feeling down,  It is normal to feel down once in a while.  having panic attacks is also completely normal. They often arise unrelated to particular conditions at a given moment.  They are a healthy symptom, your body is trying to expel bad feelings and does this by having the anxiety erupt at times. So, self-acceptance, tolerance of being on a process of clearing out worn out emotional clutter, and sleep at odd times if possible, are all ways to stabilize yourself, which will also feel calm and good!😊"
+        , "It could be really helpful to see a counselor/therapist about your depression/panic symptoms. Finding out the cause of depression/anxiety isn't always as straightforward as it seems, since both issues tend to become patterns we engage in rather than solely related to a specific trigger/reason. For example, if I were feeling down about a particular event in my life, then I may start seeing life through this lens of feeling down. This can lead to seeing a lot more that I get down about, and it can really build very quickly on itself. Same with anxiety.  It can be very difficult to see how the pattern is maintained, but that's where working with a counselor/therapist comes in. If you click on the 'advice' section at the top of the page there are some very useful links which will direct you to an appropriate service.😊"]
+        },
+        {"tag": "overcome",
+        "patterns": ["How do i overcome my anxiety and depression", "how can i get over feeling depressed and anxious", "how can i overcome my depression", "how can i overcome my feelings of anxiety" ],
+        "responses": ["Have you used meditation or hypnosis? Relaxing the mind and connecting with your true self is a great way to calm your thoughts and get to peace and calm. Hypnosis and meditation have helped a lot of people with anxiety and depression. Google hypnotherapists near me or write for a while about what is going on.😊"
+        ,"Working with a great therapist who can help you learn ways to cope might be beneficial to you. Sometimes just the act of being able to talk about things with a nonjudgmental person helps take some of the burden off of you.  A therapist can help you change your thought patterns and teach you coping skills to reduce your symptoms.😊"]
+        },
+        {"tag": "upset_everday",
+        "patterns": ["i feel that im always upset everyday, and i dont understand why", "im always feeling down and i have no idea why", "how can i get to a place where im feeling happy everyday?", "how can i start feeling content everyday?"],
+        "responses": ["An excellent question! As humans we have the ability to reflect on situations in our lives. Even if nothing currently goes on in a particular moment, its possible you are reflecting on a serious or upsetting matter, and our emotions linger within us. Just because a particular moment feels calm, inside your feelings may be the sense of a strong unsettled emotion from the recent past. Good for you to be aware of your own sensitivity, living with awareness of your moods and thoughts.😊"
+        , "It's important to take a look inside and see what's going on with you to cause you to have these feelings. I would advise getting in contact withone of the services that are avaiable in our 'advice' section. By doing this you can get you set up with someone who will help you figure out this space in your life😊."]
+        },
+        {"tag": "self-harm",
+        "patterns": ["why does it feel like self harm is addiction?", "i feel self harm is an addiction", "when i see something sad i want to self harm", "whenever i see something upsetting i want to self harm", "when i see something depressing i want to self harm", "i automatically want to self harm when i see something sad" ],
+        "responses": ["Self-harm has a way of becoming a go-to method of coping. When we get stuck using self-harm as a way to deal and manage emotions, when something serious happens it totally makes sense that that will be one the first things to go through the mind. It is its own kind of addiction. There is a therapy, DBT or, Dialectical Behavior Therapy, which focusses on giving you new tools to get through hard times, understand and manage your emotions, to stay present and to deal with relationships. This one of the most effective interventions there is for self-harm. If you are interested in DBT, reach a local therapist in your area and ask if they do DBT or can recommend you to a DBT program. This can help immensely. Self-harm recovery is totally possible, but it is definitely hard work!"]
+        },
+        {"tag": "wasnt_born",
+        "patterns": ["Is wishing I wasn't born a sign of something deeper?", "sometimes i wish i wasnt born", "i wish i wasnt born" ],
+        "responses": ["Sounds like a sign of great unhappiness, or sadness, or insecurity.The real way you'll find out what this feeling is about is to ask yourself your own question. Inside, you are the only one who will feel when you discover the true answer to your question.Everyone feels some amount of discontent in their lives once in a while. Its normal to not feel entirely happy all the time.Try to accept your unhappiness as motivation to learn more about who you are, what you like, whom you like. Study yourself because this way you increase the chance to find a road which feels right and happy😊."]
+        },
+        {"tag": "completely_lost",
+        "patterns": ["i cant control my thoughts, and have been experiencing anxiety attacks" , "i cannot focus on another and have been having anxiety attacks"],
+        "responses": ["Maybe your thoughts require your attention and the best course would be to pay attention and follow them!If you're in an especially stressful or uncertain time in your life, then the best way through is to understand the tension you feel.It keeps trying to get you to know whats going on deep within you. Anxiety is a sign of stress and weariness.  Your thoughts are a chance to simply rest and know what they would like you to know.Then, when that process is finished your anxiety will no longer be necessary and will most likely leave you alone😊."]
+        },
+        {"tag": "feeling_sad",
+        "patterns": ["when im around people or when im at home i always feel sad." , "i feel sad and irritated everyday", "i experience the feeling of being sad in pubic at at home" , "i feel sad and irritated everyday and i dont know why"],
+        "responses": ["Feelings are real, is very unlikely that you are making them up since they are a response to the thoughts in your mind and your daily experiences and interactions. Often we assume that feeling sadness is bad and that we should only feel happiness and joy; but all feelings have a purpose: joy, sadness, anger, frustration, excitement, anxiety, among others.  Is not healthy to experience the same feeling for a long time, so we should learn to identify what causes them and how to process them so you can navigate through life experiences with more ease. feel free to visit the 'advice' section at the top of the page to seek some professional advice 😊"]
+        },
+        {"tag": "feeling_empty",
+        "patterns": ["i feel empty and have no interest in anything", "i have no interest in anything" ],
+        "responses": ["Maybe right now it is time for you to rest before the next wave of new activity comes along.To have 'no interest' may mean you are already so saturated with recent situations and their meaning that you are naturally withdrawing in order to regain your energy."]
+        },
+        {"tag": "make_friends",
+        "patterns": ["im finding it hard to make new friends" , "im finding it hard to make new friends at uni" ,"im finding it hard to make new friends at university", "im having trouble socialising with new people", "can you give me some advice on how i can socialise with people?" ],
+        "responses": ["It is sad not being able to see your friends back home who were a regular part of your daily life. At university there are may ways to meet people who have similar interets to you. Try joining a society or attending events. see if anyone catches your interest to know as a friend. Keeping in mind that friendship is based on trust and common interests, and that these qualities require time to observe and develop. Think of what you can do to keep happy while these paths unfold."]
+        },
+        {"tag": "very_depressed",
+        "patterns": ["im very depressed, how do i find someone to talk to?" , "how do i find someone to talk to if im feeling depressed?" ],
+        "responses": ["You have already taken the brave first step of making the decision to heal from it and find a professional that will help you do so. There are lots of different options nowadays for therapists, as you can see them online or in an office.  My biggest tip for you is to use mind.org or bacp.co.uk , which can both be found on the students advice page (click on the advice tab at the top).  Enter in your post code and you will find many different therapists you can talk to . Be sure to find someone that you most resonate with and ask them any questions you may have."
+        , "Reaching out here is a great start! I recommend looking for somebody in your area that works with people experiencing depression. After you've chosen somebody to try, feel free to call them for a consultation! A lot of counselors and therapists offer free consultations, and remember that your counselor is working for you, so make sure they are a good fit! I hope this has been of some help."]
+        },
+        {"tag": "empathy",
+        "patterns": ["is it normal to not feel empathy? all i feel is anxiety", "i have no emotions but anxiety" ],
+        "responses": ["Empathy is the ability to tap into our own experience to help us connect with others in order to beware of how they are experiencing life. It is a skill that we learn with practice and refine as we become mature. If you are feeling anxious, maybe you are able to understand more about others who are going through anxiety.  But I wonder if instead of feeling empathy, you may just want to find ways to reduce your anxiety.  A good idea is to be very aware of your anxiety triggers, and once you identify them explore other ways you could react."]
+        },
+        {"tag": "self_cure_depression",
+        "patterns": ["How can i deal with depression by myself?" ,"how can i deal with depression without telling anyone?" ],
+        "responses": ["Love yourself more and treat yourself kindly, with empathy and compassion.Usually when people feel depressed they also feel lonely and isolated. Since at this time you wouldn't want to tell anyone about the way you feel, which includes the possibility that a few of the ones whom you tell would offer you emotional support, give this to yourself. Also consider to make a goal of eventually telling someone whom you are reasonably sure would understand and empathize, about your depression.This will help alleviate the sense of shame, unworthiness and pervasive guilt which often comes along with depression. Good luck!"
+        , "It can be really tough to tell someone - anyone - that you're feeling depressed. But finding that supportive person that you can share with is a big part of the battle with depression. Depression seems to grow the more we isolate ourselves and keep quiet about it. I would advise that you get some prefessional help, however If that feels like a big step right now, maybe check out a book or two... 'Feeling Good' by Dr. David Burns if you want some practical thoughts on tackling depression and 'Radical Acceptance' by Tara Brach if you prefer something a little more spiritual."]
+        },
+        {"tag": "feeling_empty",
+        "patterns": ["I feel empty, how do i stop feeling this way", "how do i stop feeling empty?" , "i feel nothing, how can i stop feeling this way?"],
+        "responses": ["A feeling of emptiness can be from a lack of awareness and acknowledgment for the things, the people, the places that you have in your life. The use of affirmation and gratitudes helps to remind ourselves of all of the aspects of our lives."
+        , "Your question is very broad because feeling empty can develop for many different reasons.You're certainly not alone in feeling this way! Try to follow the logic of your feelings by asking yourself questions about the empty feeling.  Doing this may open up a discovery about the reason for the emptiness feeling. e.g When do you feel empty, are there certain situations it happens more often than another, what helps the feeling go away, what or who is helpful in relieving the empty feeling. Sometimes people need a little help to get started in understanding how to recognize their feelings. Consider a therapist, any disciplined practice which encourages self-knowledge, such as some yoga practices, and a creative discipline like photography or music. As long as you concentrate on increasing your self-understanding, eventually you'll find the answer to your question!"]
+        },
+        {"tag": "Doing_uni_wrk",
+        "patterns": ["I can't focus when I'm doing work, even when I try to force myself to do it" ,"im unable to focus on my work", "im unable to focus on my revision", "i cant revise, its driving me insane", "i cant do my coursework", "my coursework is becoming to stressful" ],
+        "responses": ["This is a common issue for students at university.. I can suggest a few things that might help. A powernap - just a half hour of sleep can clear your mind and let you refocus. Also, brain activity increases with physical exertion. Just walk around for a minute and get your brain working and that'll help you reach the task at hand. Taking breaks is totally okay. Try to have something to do in between that you enjoy."]
+        },
+        {"tag": "approaching_counselor",
+        "patterns": ["How would i approach a counseler?", "how would i start the counseling process?" ],
+        "responses": ["Most counselors are very approachable and many offer a 15 minute chat by phone to allow you to talk about your issue, and to get a feel for the counselor. If you like what you hear by phone, the next step is to set up a face-to-face meeting. Studies show that the most important element in effective therapy is that you feel a connection with your counselor. Trust your instincts and if you don't feel comfortable, let him or her know that you don't think it's a good fit. Many counselors are listed on websites - you can find some of these in the advice section at the top of the page."
+        , "Reaching out to me was a great first step! To start counseling, I would recommend looking up counselors and thinking about what sort of counselor would be a good fit. See if they have areas of focus that line up with your goals, and never be afraid to call and set up a consultation. Usually these are free of charge and can help you make your decision."]
+        },
+        {"tag": "counseling_help",
+        "patterns": ["How does counseling help people?", "can counseling really help people?" ,"Does counseling really do anything that can help people?"],
+        "responses": ["Great question! 👌🏽😊, Counseling provides an area for people to speak to an unbiased professional about their concerns to address their unique needs. While length of time varies, counseling is a process and can be done from as little as one session to multiple sessions. Counseling provide a safe, non-judgmental, empathetic atmosphere from a professional helper provide the service"
+        , "Counseling provides a safe environment for people to explore the beliefs about the challenges in life. The various types(modalities/techniques) of counseling serve as guides for specific individual's personal journeys."
+        , "Yes, counseling helps a lot of people, especially when there is a good rapport between the counselor and their client. Knowing your counselor is someone who is really on your side and wants to see you grow past your difficulties into a healthy, happy, successful life is more important than what kind of counseling method they use. If you are looking for a counselor, take your time and be sure you feel heard and respected as well as challenged to grow."]
+        },
+        {"tag": "counseling_nervous",
+        "patterns": ["Is it normal to feel nervous about therapy?", "im nervous about going to therapy", "im a bit nervous going into therapy"],
+        "responses": ["Its very normal to be nervous going into therapy. You are being vulnerable and honest, which is always scary, no matter how many times you do it. The best part about therapy is that the more you go, the more confident you are in your ability to work through those difficult feelings, and while you still may sometimes get nervous, you will have confidence too!"
+        , "Yes, it is completely normal to feel anxious about therapy. Therapy often explores topics and feelings that are uncomfortable. The ultimate goal of therapy is to feel better but the process itself can be uncomfortable."
+        , "What you are experiencing is extremely normal. Opening up to someone you don't know from a can of paint can elicit some uncomfortable feelings and make you feel shaky. With time and building trust with your therapist, you will eventually start feeling less apprehensive before sessions😊."]
+        },
+        {"tag": "negative_thoughts",
+        "patterns": ["i keep having thoughts about not being worth anything", "i keep having thoughts about being useless", "i feel like im worth nothing" ],
+        "responses": ["We all suffer from random thoughts from time to time. Being able to manage your thoughts and choose what to think about yourself is something you would learn in counseling. An effective treatment modality for this situation is cognitive behavioral therapy."
+        ,"There is nothing wrong with you! Sometimes we get intrusive thoughts that can be worrisome. One things that can be helpful is to identify if there is a trigger to these thoughts - something in your life that makes these thoughts more common (an experience, a person, a place, a situation, etc.). It will also be helpful to try and challenge this type of thinking by focusing ways in which you are worthwhile as a person and have worth in your life. CBT (Cognitive Behavioral Therapy) may be particularly helpful with this too. If you are open to seeing a therapist, find one that does CBT. You can also find resources on CBT online. It focuses on stopping and challenging unhelpful and harmful thinking patterns and replacing it with more helpful and healthy thinking patterns😊."]
+        },
+        {"tag": "reducing_anxiety",
+        "patterns": ["what are the best ways to reduce anxiety?", "how can i reduce my anxiety?" ],
+        "responses": ["Since it is clear that people react differently to the sameÂ stressors, we know that the stressors are not causing the anxiety, our thoughts about the stressors are. Often, cognitive distortions are the problem. Some common cognitive distortions include catastrophizing (predicting the worst), future telling, black and white thinking (if it's not perfect, it's terrible), mind-reading (I just know he is angry at me) and can't-stand-itis (I can't stand this situation). There are more, but the list is long, and if some of these are resonating with you, I would advise looking up CBT (cognitive behavioral therapy) tips, worksheets, booklets etc. on line, or contact a local CBT therapist😊."]
+        },
+        {"tag": "not_knowing_Self",
+        "patterns": ["i feel like i dont even know who i am anymore", "i feel like i dont even know myself", "how do i find myself" ],
+        "responses": ["Therapy may be an effective way for you to get a stronger sense of who you are. A competent therapist will work to create a safe and curious therapeutic relationship in which you can explore your identity. There are also many different exercises which you can do in and out of therapy which you may find helpful in this area as well 😊."
+        , "Start by giving yourself enough quiet and time to remember about yourself what feels steady and consistent in your nature and interactions with others.Give yourself the freedom to your interest in having interests. Are you motivated because of competing with others or because an activity itself feels satisfying? If you are able to develop a sense of defining yourself without fear of judging yourself, you will start coming close to knowing who you are😊."]
+        },
+        {"tag": "accepting",
+        "patterns": ["okay", "okay, ill give that a go", "noted" ],
+        "responses": ["awesome! 😊", "😊", "thats great to hear! 😊"]
+        },
+        {"tag": "cursing",
+        "patterns": ["fuck off", "go fuck yourself", "piss off", "you dont know shit", "shut the fuck up", "fuck you", "you dont know what the fuck your talking about", "fuck this shit" ],
+        "responses": ["im very sorry for the anger that i've made you feel towards me, just remember i'm always here for you if you wish to talk", "if you dont feel happy talking to me may i suggest talking to someone else? you can find some very useful contacts under the advice section at the top of this page😊"]
+        },
+
+        {"tag": "worry",
+        "patterns": [" I find myself hanging out in my room a lot just watching TV.", "I dont really socialise as much as i used too", "dont socialise as much", "I never really leave my room"],
+        "responses": ["Is something worrying you? maybe Something is making it hard for you to concentrate?", "is something on your mind?", "whats wrong dude? is there something which is making it difficult for you to concentrate?"]
+        },
+        {"tag": "worried",
+        "patterns": ["worried about grades", "worried about my work", "worried about letting my parents down", "I'm worried about grades, the more I think about this stuff, the worse it gets and the less I get done.", "i'm worried about my work, the more I think about this stuff, the worse it gets and the less I get done.", "im worried about letting my parents down, the more I think about this stuff, the worse it gets and the less I get done."],
+        "responses": ["I'm sorry to hear that!😞 what we need to work on is breaking those negative thoughts so you can start focusing again!😁 Try to exercise more and keep in touch with your friends who support you. This will help keep you in a positive frame of mind! 💪🏽"]
+        },
+        {"tag": "parents",
+        "patterns": [ "worried about letting my parents down", "im worried about letting my parents down, the more I think about this stuff, the worse it gets and the less I get done."],
+        "responses": ["I'm sorry to hear that, just remember that your parents love you no matter what❤️! and they will always support you in any situation. If you express your concerns to your parents i'm sure they will understand, whatever that mayb be 😊"]
+        },
+        {"tag": "accepting",
+        "patterns": ["okay", "okay, ill give that a go", "noted", "" ],
+        "responses": ["awesome! 😊", "😊", "thats great to hear! 😊"]
+        },
+        {"tag": "decline",
+        "patterns": ["not really", "they hate me" ,"im so sad"],
+        "responses": ["sorry to hear that 😩"]
+        },
+        {"tag": "symptoms",
+        "patterns": ["can you tell me about symptoms of anxiety?", "symptoms of anxiety?"],
+        "responses": ["Sure!, There are many symptoms of anxiety which can include <p>Feelings or stress and apprehension<br>Irritability<br>Trouble concentrating<br>fearfullness<br>sweating and dizziness<br>shortness of breath<br>irregular heartbeat<br>muscle pain and tension<br>headaches<br>upset stomach and diarrhoea</p>"]
+        },
+        {"tag": "experiencing",
+        "patterns": ["is there anything i can do to prevent stress","is there anything i can do to cope with stress?", "Are there any coping strategies that could help me with anxiety?", "is there anything i can try to prevent my stress and anxiety", "are there any other coping strategies i can use", "what can i do to prevent stress", "what can i do to prevent anxiety", "what other strategies are there?"],
+        "responses": ["There are many strategies which can help you with both anxiety and stress- Take a time out, practice yoga, listen to music, meditate, get a massage, or learan relaxation techniques", "Eat well balanced meals, Do not skip any meals. Do keep healthful, energy-boostings snacks on hand", "Limit alcohol and caffeine, which can aggravate anxiety and trigger panic attacks.", "Get enough sleep. When stressed, your body needs additional sleep and rest. 😊", 
+                "Exercise daily to help you feel good and maintain your health. Check out the fitness tips below.", "Take deep breaths. Inhale and exhale slowly.", "Count to 10 slowly. Repeat, and count to 20 if necessary.", "Do your best. Instead of aiming for perfection, which isn't possible, be proud of however close you get.", "Accept that you cannot control everything. Put your stress in perspective: Is it really as bad as you think?", "Welcome humor. A good laugh goes a long way.", "Maintain a positive attitude. Make an effort to replace negative thoughts with positive ones! 😊"
+        ,"Get involved. Volunteer or find another way to be active in your community, which creates a support network and gives you a break from everyday stress.", "Learn what triggers your anxiety. Is it work, family, school, or something else you can identify? Write in a journal when you’re feeling stressed or anxious, and look for a pattern.",
+        "Talk to someone. Tell friends and family you’re feeling overwhelmed, and let them know how they can help you. Talk to a physician or therapist for professional help.😊"]
+        },
+        {"tag": "meeting_people",
+        "patterns": ["I'm having trouble meeting new people at university", "i'm finding it hard to meet other people at university" ,"I’m finding it hard to meet people with the same interests as me" ],
+        "responses": ["Dont worry about this too much. It's is a common issue that all students face when at university! 😁 I would reccomend that you try getting to know the people who you live with, or you should think about joining societys that you're interested in. This will allow you to meet people who have the same interests as you"
+        ,"Don't worry. Everyone is in the same boat. Everybody in your flat will be thinking the same and hoping you like them!   Even if your not confident, pretend, they don't know that your caking it inside! I think the most important thing to remember is, SMILE! 😁 there is nothing better than a nice warm welcoming smile. Immediately puts everyone else at ease. 😊😉"
+        ,"Dont worry about this too much. It's is a common issue that all students face when at university. There are other ways to make friends such as through your course, in clubs and societies, neighbouring accommodation or just meeting them out, so it's not just your flatmates, even though I'm sure you'll be good friends with them! 😊 "]
+        },
+        {"tag": "working",
+        "patterns": ["I'm finding it hard to work with new people.", "im finding it difficult to get along with people in my class", "im finding it hard to get along with people on my course" ],
+        "responses": ["what do you think is making you feel this way?", "elaborate for me as to why you think this is happening? ✏"]
+        },
+        {"tag": "social_skills" ,
+        "patterns": ["I feel that my social skills are undeveloped", "my social skills are making it hard for me to work with new people", "social skills are a big issue for me when it comes to meeting new people", "my social skills can be a problem when it comes to working with new people at uni" ],
+        "responses": ["Universities provide alot of support for their students, and free counseling services are often one of them. There is nothing wrong with seeing a counselor!😊. In fact, since access to the service is often included as part of your tuition, it can be a great opportunity to get some free outside help. The earlier you start working on this stuff the better too. Getting assistance may involve talking to someone one-on-one or taking part in a therapy group focused on learning people skills or dealing with social anxiety. 😊"]
+        },
+        {"tag": "Moving_out",
+        "patterns": ["moving out from home has made my anxiety issues escalate", "moving out from home has made my anxiety a bit worse" ],
+        "responses": ["Moving out can be a big change, especially when you havent moved out before, how has it become worse for you? ✏ "]
+        },
+        {"tag": "interaction",
+        "patterns": ["whenever theres an opportunity for me to interact with people i always turn it down, which makes things harder for myself" , "not interacting with people is stopping me from making friends and relationships"],
+        "responses": ["so your really worried about where this may lead to, if you are going to have a social interaction what kind of thoughts go through your head? ✏  "]
+        },
+        {"tag": "social_anxiety",
+        "patterns": ["i get really hot and sweaty, and feel as though everyone is looking at me", "i feel like everyone is looking at me, and thinking that im really stupid", "i feel like everyone is staring at me and thinking that i cant do the work", "i feel like everyone is staring at me and thinking that i am an idiot"],
+        "responses": ["okay, it sounds like you have a lot of thoughts running through your head, where you repeatedly think of how others will perceieve you. How does that make you feel? ✏"]
+        },
+        {"tag": "laughing",
+        "patterns": ["haha", "loool", "hahaha", "lmao", "thats hillarious!", "thats funny", "you're really funny", "that made me laugh" ],
+        "responses": ["😂 it's always good to have a laugh", "😂", " 😂 im glad i can make you laugh! ", "Laughing is the perfect way to release any negative energy! 😁"]
+        },
+        {"tag": "finances",
+        "patterns": ["im feeling a bit anxious about being able to manage my finances", "i'm feeling a bit isolated about my ability to manage my money", 
+                "im having difficulties being able to make informal financial decisions", "im having issues managing my finances", "i'm really bad at managing my finances" ],
+        "responses": ["Managing your finances as a student can itself be difficult, however there is a lot of support from your university that you can access as well as support from external organisations!😁"]
+        },
+        {"tag": "jokes",
+        "patterns": ["Can you tell me a joke?", "not feeling to good today, can you tell me a joke?", "do you mind telling me a joke?", "tell me another joke?", "tell me one more joke" ],
+        "responses": ["want to hear a joke about paper?...never mind its 'tearable!'😂", "How do you follow Will Smith in the snow?...You follow the fresh prints!😂" , "Why do fathers take an extra pair of socks when they go golfing? In case they get a hole in one! 😂"]
+        },
+        {"tag": "no_motivation",
+        "patterns": ["I've been recently getting bad grades and dont really have any motivation or time to revise. Do you have any tips on revising and getting good grades?", "do you have any tips on revision?", "do you have any tips on revision, i dont feel motivated anynmore", " im lacking the motivation to revise" , "my bad grades making me lack motivation, can you give me some advice?" ],
+        "responses": ["I would suggest revising with friends that do the same subject as you. So, for example, host online zoom revision sessions. This can really help because you can discuss more and go in-depth. This would be really helpful especially if you tend to lose motivation very quickly as well! This way you can help each other and have fun revising! 😁"]
+        },
+        {"tag": "exams",
+        "patterns": ["Im struggling to prepare for my exams", "Im getting anxious about my upcoming exam", "Exams are making me nervous", "im finding it hard to improve my confidence leading up to my exams", "im experiencing a lot of anxiety coming up to my exams" ],
+        "responses": ["A Good study routine and adequate preparation are essential factors in becoming confident for exams. Nothing can replace being well prepared!", "Try and ensure a balanced lifestyle with leisure activities built into your timetable. Getting adequate sleep and eating well are both significantly important for you to have a focussed mindset and feel determined to do well 💪🏽."
+        , "Introduce relaxation exercises into your daily routine. By practising relaxation, you can develop a sufficiently strong relaxation response to counteract the physical symptoms associated with any excessive anxiety 😊"]
+        },
+        {"tag": "lack_sleep",
+        "patterns": ["I’m finding it hard to sleep" ],
+        "responses": ["im sorry to hear that😔, could you please elaborate on why this is happening?"]
+        },
+        {"tag": "lack_of_sleep",
+        "patterns": ["I’ve barely slept and I’m always feeling constantly stressed.", "I’ve started having panic attacks, which as a result has caused me to skip lectures and have no sleep at all." ,"Most days I have been unable to sleep because my body clock is so messed up", "I’ve been on the verge of tears because I haven’t been able to sleep recently", "My Body clock messing up from going on night outs." ],
+        "responses": ["I would Definitely try sleep therapy! 😊, do not rely on sleeping aids. Cut out coffee, try sleep hypnosis, through noise cancelling headphones, re arrange your bedroom, make sleeping the focus for your room, keep separate areas for study etc at your desk, keep you bed for sleep only. Look at your sleep hygiene, and if needed regulate, or improve it."
+        ,"Try to write down all negative thoughts and ideas ✏, and then write down the counter argument. It somehow helps to sink in more when it’s written. Also finding something that helps to distract you e.g. comedy panel shows or nature documentaries playing in the background can help you sleep 📺. These aren’t perfect but they’re methods which have known to work! 😊"]
+        },
+        {"tag": "student_noise",
+        "patterns": ["Noise of other students in the same flat as me", "Noise of house mates partying", "House mates won’t stop playing music so I can’t sleep", "I’m really pissed off with the students who I live with, they are being so loud", "I’m getting annoyed with students knocking on my door, they won’t stop." , "Students keep running around and knocking on people’s doors, and its keeping me awake", "Noise of other students outside on the road", "Noise of other students screaming and being drunk" ],
+        "responses": ["That’s not good at all! I would recommend that you try block out the noise with some relaxing music or ambient sound?🎶 You can find many suggestions on YouTube. Noisy neighbours are unfortunately a common issue among university students. Maybe try approach them in a calm and generous way and smile! it’s always possible to have a conversation without any confrontation. Let them know that you’re having trouble sleeping due to them being loud, but be sure to offer a solution. 😊 "]
+        },
+        {"tag": "boring_subject",
+        "patterns": ["I don’t feel motivated anymore, I feel that the course isn’t what I expected and now im wasting my time" ,"I’m beginning to find the subject boring, and I’m not enjoying it for some reason " ],
+        "responses": ["That’s not to worry! Sometimes we tend to get ourselves into situations which we thought might be of use to us. I wouldn’t worry too much about this, get in contact with the university’s support, services and they could maybe transfer you to another course if you feel like doing something else? Remember always think positively and don’t stress yourself out too much about something which can easily be resolved! 😊"]
+        },
+        {"tag": "deadlines",
+        "patterns": ["I overthink alot" ],
+        "responses": ["Not to worry this is a common cause of anxiety and its totally normal to have these experiences!, try not to worry about the things that are making you feel worried. Try to take your mind of these thoughts by watching TV, or going out with your flatmates to the student union to help take your mind off it! Going and and getting fresh air is always helpful! 😊"]
+        },
+        {"tag": "retaking_year",
+        "patterns": ["I feel really embarrassed to have to retake first year due to mental health issues" ],
+        "responses": ["I understand how you feel but it’s nothing to be ashamed about 🤗. You’re making a sensible decision. The vast majority of people won’t judge you as your reasons are very understandable. If anyone does, those are the people you don’t need to be around. 1 year difference is nothing at uni and nobody will think any less of you. Don’t be too harsh on yourself, you’re being brave 💯 💪🏽.", 
+        "There's nothing embarrassing about it at all! You had the disadvantage of mental health problems that other people may not have had, it's not a matter of laziness or carelessness, it's a genuine problem that impeded your studies. I bet you that so many people will be retaking like you! You don't have to tell anyone if you don't feel comfortable, and there is no point in judging yourself! Personally, I think it's a real achievement that you got into university, tried your first year and experienced a set back and then still had to courage to do the year over again.😊"]
+        },
+        {"tag": "home_sickness",
+        "patterns": ["I moved away to uni last weekend, and I haven't stoppped feeling homesick since the second my family left.", "I can barely sleep and I've hardly eaten because I feel constantly homesick" , "I miss my family so much and I am constantly thinking that I want to go home and not come back." , "im feeling really homesick and feel like i want to quit" ],
+        "responses": ["Not to worry this is a common cause of anxiety and its totally normal to have this experiences! Try to meet more people. I think you feel lonely at the moment, which is making you miss home even more. Try to take your mind off this by talking to your course mates, attend freshers events and join societies, you will make good friends and you will feel more settled in at university😊."]
+        },
+        {"tag": "stress_about_everything",
+        "patterns": ["I am constantly stressed about everything, I'm stressed about my course whether i made the right decision to study it, im stressed about my future career and employability", "im getting so stressed with everything and dont know what to do with myself" , "im getting so stressed with everything and feel that im not going to get a job " ],
+        "responses": ["Take some time out, seriously, it's not worth what it's doing to your Mental health.From tonight, work on getting up at a reasonable hour and when you wake up, journal. Just write whatever comes into your mind ✏. This technique is called free writing, it can help with free floating anxiety, and lessen its intensity, which should lessen the amount of panic attacks. Because you are having panic attacks, I'd suggest you speak to your GP too. There is no shame in this! 😊 if not, I'm always open to listening, I know what it's like to live with Mental Health issues, and I don't mind being a source of support 🤗❤️"]
+        },
+        {"tag": "unable_to_work",
+        "patterns": ["Literally feel like I can't do any work effectively and I'm panicking" , "I feel like I’m incompetent of getting my coursework done to a good standard", "I feel that I just can’t do my coursework", "I’m feeling really overwhelmed with the amount of coursework I need to get done" , "I can barely find the motivation to attempt coursework.", "I have 4 deadlines this month and ive barely touched them. Im starting to panic"],
+        "responses": ["Daily exercise is great 🚲🏃🏽- it releases endorphins which improve your mood. If you want my advice, exercise daily and stick to a strict timetable. People that have tried this in the past have found it to be successful. Maybe try engaging with your housemates, they might just need you to take the first step. Make sure to keep challenging yourself but know your limits. Set yourself clear goals of what you want to have accomplished by the end of the day and mark them off once you have achieved them. It really does help if you're looking for motivation. I hope this helps even just a little...stay strong!💪🏽"]
+        },
+        {"tag": "errors_on_exams",
+        "patterns": ["I've sat some exams recently and realised i made stupid errors on questions that were fairly simple" ,"ive recentl sat my exams and made some silly errors" ,"ive been getting bad anxiety with my exams recently, im making stupid errors" ],
+        "responses": ["I'm sure whatever happens, you will be okay. The fact that you know you made stupid errors means that you aren't a failure and are smart and that some of your guesses were correct which means there's a higher chance of you passing. I wish you the very best of luck and hopefully, you pass all your exams!😊"]
+        },
+        {"tag": "social_anxiety",
+        "patterns": ["i really struggle with social anxiety and i find it hard to go out anywhere", "im finding ir hard to go out as i have social anxiety" , " do you have any tips for social anxiety"],
+        "responses": ["I'd suggest making an effort with your flat/house mates and then going to events and the like with them, but only go to things where you'd feel comfortable. Going somewhere where you're likely to feel self-conscious and nervous the whole time will probably make you feel worse and make you less likely to gain any confidence. Don't worry if you don't make hundreds of new friends and suddenly be the life and soul of a party straightaway, it'll probably take a bit of time....but try not to worry about it too much! Making a handful of close friends is the best thing for you to do.😊"]
+        },
+        {"tag": "feel",
+        "patterns": ["it makes me feel like an idiot, I shouldnt bother making an effort and i should go home", "i hate being in that situation with everyone judging me", "i feel like everyone else is fine and im a freak who isnt normal and cant do normal things"],
+        "responses": [""]
+        },
+        {"tag": "reasons_for_social_anxiety_movingOut",
+        "patterns": ["i thought moving out and being independant would make things easier but things have become worse. i spend most of the day inside watching tv", "i dont really have many friends, so im staying inside most of the time", "im staying in most of the time which i find scary and i dont really like it"],
+        "responses": [""]
+        },
+        {"tag": "presentation_anxiety",
+        "patterns": ["I have a presentation tomorrow but I'm so ridiculously nervous and don't know if I'll turn up", "i have a presentation coming up and im so nervous", "im nervous for my presentation", "i need some tips to overcome my anxiety during presentations", "help me to overcome my fears of presentation", "im feeling very anxious for my upcoming presentation" ],
+        "responses": ["Have you practiced your presentation? As in, speaking it out loud? Sometimes even just hearing your own voice saying the words can be reassuring. We're often not used to hearing ourselves speak in the manner that we do during a formal presentation, so practice out loud a few times… Even better, rope in a sympathetic friend or housemate who will sit and listen to you while you practice! Having an audience is great for this kind of thing, as they can point out anything obviously wrong that you could improve upon 😊"]
+        },
+        {"tag": "revision",
+        "patterns": ["can you help me with some revision techniques","can you give me some advice on revision techniques" ],
+        "responses": ["For oral exams or presentations, try recording what you have to say and play it back to yourself You can then listen to it in your spare time or before bed which is actually known to help your brain learn and memorize things a lot easier!🧠💡<br><br>Drawing things out is a really good revision tool as well! If there's something that your struggle to understand/remember, try spending some time drawing it out. This Obviously this can't work for all subjects, but if you're creative you can find ways of transforming almost anything into a doodle that will jog your memory!😊 "]
+        }
+      
+]
+}
+        
